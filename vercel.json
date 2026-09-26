@@ -13,9 +13,9 @@
     } 
   }, 
   "rewrites": [ { 
-    "source": "/", "destination": "/api/index.php" 
+    "source": "/", "destination": "/index.php" 
   }, { 
-    "source": "/historial", "destination": "/api/historial.php" 
+    "source": "/historial", "destination": "/historial.php" 
   } 
   ] 
 }
