@@ -1,11 +1,6 @@
-{ 
-  "functions": { 
-    "/guardar.php": 
-    { "runtime": "vercel-php@0.8.0" 
-    }, "/listar.php": { 
-      "runtime": "vercel-php@0.8.0" 
-    }, "/eliminar.php": { 
-      "runtime": "vercel-php@0.8.0" 
-    } 
-  }, 
+{
+  "functions": {
+    "api/*.php": { "runtime": "vercel-php@0.8.0" },
+    "*.php": { "runtime": "vercel-php@0.8.0" }
+  }
 }
