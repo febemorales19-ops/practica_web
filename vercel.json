@@ -22,6 +22,10 @@
       "destination": "/api/index.php"
     },
     {
+      "source": "/index.php",
+      "destination": "/api/index.php"
+    },
+    {
       "source": "/historial.php",
       "destination": "/api/historial.php"
     },
