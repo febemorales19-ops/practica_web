@@ -1,37 +1,13 @@
 {
   "functions": {
-    "api/index.php": {
-      "runtime": "vercel-php@0.8.0"
-    },
-    "api/historial.php": {
-      "runtime": "vercel-php@0.8.0"
-    },
-    "api/guardar.php": {
-      "runtime": "vercel-php@0.8.0"
-    },
-    "api/listar.php": {
-      "runtime": "vercel-php@0.8.0"
-    },
-    "api/eliminar.php": {
+    "api/**/*.php": {
       "runtime": "vercel-php@0.8.0"
     }
   },
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/api/index.php"
-    },
-    {
-      "source": "/index.php",
-      "destination": "/api/index.php"
-    },
-    {
-      "source": "/historial.php",
-      "destination": "/api/historial.php"
-    },
-    {
-      "source": "/historial",
-      "destination": "/api/historial.php"
+      "source": "/(.*\\.php)",
+      "destination": "/api/$1"
     }
   ]
 }
